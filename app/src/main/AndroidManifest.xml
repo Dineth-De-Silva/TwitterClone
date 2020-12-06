@@ -12,14 +12,17 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".CreateAccountActivity">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".CreateAccount"
+            android:parentActivityName=".StartActivity"/>
+        <activity android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

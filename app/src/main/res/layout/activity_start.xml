@@ -25,7 +25,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/rounded_background_button"
         android:fontFamily="@font/roboto_black"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,4 +45,32 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/buttonCreateAccount"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAccountInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/have_an_account_already"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/buttonCreateAccount" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/log_in"
+        android:textColor="@color/twitter_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAccountInfo"
+        app:layout_constraintStart_toEndOf="@+id/textViewAccountInfo"
+        app:layout_constraintTop_toTopOf="@+id/textViewAccountInfo" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
